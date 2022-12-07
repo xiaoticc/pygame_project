@@ -29,7 +29,7 @@ theme = pygame_menu.themes.Theme(
     title_font_color=(0, 0, 0),
     widget_font_color=(0, 0, 0),
     widget_margin=(0, 0),
-    widget_padding=50,
+    widget_padding=30,
     title_bar_style=pygame_menu.widgets.MENUBAR_STYLE_NONE
 )
 
@@ -52,7 +52,7 @@ def startGame():
 
 
 # создаем меню с нашей темой
-menu = pygame_menu.Menu('Candy Dream', WIDTH, HEIGHT, theme=theme)
+menu = pygame_menu.Menu("Let's start your dream!", WIDTH, HEIGHT, theme=theme)
 # добавляем кнопки и действия к ним
 menu.add.button('PLAY', startGame)
 menu.add.button('Exit', pygame_menu.events.EXIT)
