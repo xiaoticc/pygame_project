@@ -8,7 +8,6 @@ class Character(pygame.sprite.Sprite):
         self.frames = []
         self.cut_sheet(sheet, columns, rows)
         self.cur_frame = 0
-        self.cur_frame_walk = 0
         self.image = self.frames[self.cur_frame]
         self.health = 50
 
