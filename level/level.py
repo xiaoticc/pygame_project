@@ -61,4 +61,3 @@ class Level:
                     tile_module.Tile(self.tile_images['empty'], (x, y), (20, 20), empty_group, tile_group, all_sprites)
                     enemy_module.Enemy(self.enemy_image, (x, y), (17, 17), enemy_group, all_sprites)
         return new_player, x, y
-

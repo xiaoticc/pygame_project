@@ -74,4 +74,3 @@ class Character(pygame.sprite.Sprite):
     def update(self, *args):
         if args:
             self.acts(args[0])
-
