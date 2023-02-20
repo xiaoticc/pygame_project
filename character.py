@@ -29,7 +29,7 @@ class Character(pygame.sprite.Sprite):
                 self.frames.append(sheet.subsurface(pygame.Rect(
                     frame_location, self.rect.size)))
 
-    def walk(self, event):
+    def acts(self, event):
         if pygame.key.get_pressed()[pygame.K_LEFT] and self.rect.x >= 10:
             if self.counter >= 6 or self.counter < 3:
                 self.counter = 3
@@ -73,5 +73,5 @@ class Character(pygame.sprite.Sprite):
 
     def update(self, *args):
         if args:
-            self.walk(args[0])
+            self.acts(args[0])
 
